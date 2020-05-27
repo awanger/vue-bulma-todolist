@@ -1,17 +1,32 @@
 <template>
   <div id="app">
-    <JesusLama/>
+    <div class="container">
+      <div class="panel">
+        <p class="panel-heading">
+          Todo List
+        </p>
+        <search/>
+        <a class="panel-tabs">
+          <a class="is-active">All</a>
+          <a>Incomplete</a>
+          <a>Complete</a>
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 
-import JesusLama from './components/Todos.vue'
+// import Todos from './components/Todos.vue'
+import Search from './components/Search.vue'
+
 
 export default {
   name: 'App',
   components: {
-    JesusLama
+    Search
+    // Todos
   },
   data() {
     return {
@@ -21,6 +36,17 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+  @import './../node_modules/bulma/css/bulma.css';
 
+  .container {
+    margin-top: 4rem;
+    max-width: 800px;
+  }
+
+  $some-variable: red;
+
+  h1 {
+    color: $some-variable;
+  }
 </style>
