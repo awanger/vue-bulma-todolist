@@ -43,7 +43,7 @@ export default {
         {
           id:2,
           title: "Second Todo",
-          completed: true
+          completed: false
         },
         {
           id:3,
@@ -53,12 +53,12 @@ export default {
         {
           id:4,
           title: "Fourth Todo",
-          completed: true
+          completed: false
         },
         {
           id:5,
           title: "Fifth Todo",
-          completed: true
+          completed: false
         }
       ]
     }
