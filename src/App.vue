@@ -12,7 +12,7 @@
           <a>Incomplete</a>
         </a>
         <todos v-bind:todos="todos" /> <!-- pass an array -->
-        <add-item v-on:click='addTodo'/>
+        <add-item v-on:create-todo='addTodo'/>
       </div>
     </div>
   </div>
@@ -65,8 +65,8 @@ export default {
   },
   methods: {
     addTodo(newTodo) {
+      // add todo to the list
       this.todos = [...this.todos, newTodo];
-      console.log("hello world");
     }
   }
 }

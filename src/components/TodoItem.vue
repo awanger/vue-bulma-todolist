@@ -2,7 +2,7 @@
   <label class="checkbox" v-bind:class="{ 'is-complete' : todo.completed }">
     <input type="checkbox" v-on:click=markComplete(todo)>
     {{ todo.title }}
-  </label>  
+  </label>
 </template>
 
 
@@ -14,7 +14,6 @@ export default {
   methods: {
     markComplete(todo) {
       todo.completed = !todo.completed;
-      console.log(todo.completed);
     }
   }
 }

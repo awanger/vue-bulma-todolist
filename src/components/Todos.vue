@@ -4,7 +4,6 @@
       <todo-item v-bind:todo="todo"/>
     </div>
   </div>
-
 </template>
 
 <script>
