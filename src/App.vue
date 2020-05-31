@@ -11,7 +11,7 @@
           <a>Complete</a>
           <a>Incomplete</a>
         </a>
-        <todos v-bind:todos="todos" /> <!-- pass an array -->
+        <todos v-on:delete-todo='removeTodo' v-bind:todos="todos" /> <!-- pass an array -->
         <add-item v-on:create-todo='addTodo'/>
       </div>
     </div>
@@ -67,6 +67,12 @@ export default {
     addTodo(newTodo) {
       // add todo to the list
       this.todos = [...this.todos, newTodo];
+    },
+    removeTodo(todo) {
+      var index = this.todos.indexOf(todo);
+      if(index > -1) {
+        this.todos.splice(index, 1);
+      }
     }
   }
 }
