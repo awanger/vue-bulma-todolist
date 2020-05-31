@@ -3,7 +3,7 @@
     <p class="control has-icons-left">
       <input class="input" type="text" placeholder="Add new item"
              v-model="inputText"
-             v-on:keyup.enter="createTodo(inputText)">
+             v-on:change="createTodo(inputText)">
       <span class="icon is-left">
         <i class="fas fa-search"></i>
       </span>

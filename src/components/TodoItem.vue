@@ -25,4 +25,9 @@ export default {
   .is-complete {
     text-decoration: line-through;
   }
+
+  label {
+    width: 100%;
+  }
+
 </style>
